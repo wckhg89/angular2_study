@@ -9,7 +9,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms"); //ngModel binding
+var app_component_1 = require("./app.component");
 var hello_component_1 = require("./hello/hello.component");
+var parent_component_1 = require("./nested/parent.component");
+var child_component_1 = require("./nested/child.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -18,8 +21,16 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [hello_component_1.HelloComponent],
-        bootstrap: [hello_component_1.HelloComponent]
+        declarations: [
+            app_component_1.AppComponent,
+            hello_component_1.HelloComponent,
+            parent_component_1.ParentComponent, child_component_1.ChildComponent
+        ],
+        bootstrap: [
+            app_component_1.AppComponent,
+            hello_component_1.HelloComponent,
+            parent_component_1.ParentComponent
+        ]
     })
 ], AppModule);
 exports.AppModule = AppModule;
