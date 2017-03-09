@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms'; //ngModel binding
 
 
@@ -9,18 +8,32 @@ import { HelloComponent } from './hello/hello.component';
 
 import {ParentComponent} from './nested/parent.component';
 import {ChildComponent} from './nested/child.component';
+import {
+  ParentToChildInputComponent
+} from "./parent-to-child/parent-to-child-input.component";
+import {ChildInputComponent} from "./parent-to-child/child-input.component";
+import {ParentToChildInputsComponent} from "./parnet-to-child-inputs/parent-to-child-inputs.component";
+import {ChildInputsComponent} from "./parnet-to-child-inputs/child-inputs.component";
+import {ChildToParentComponent} from "./child-to-parent/child-to-parent.component";
+import {ChildValueComponent} from "./child-to-parent/child.component";
+
+
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
-    AppComponent,
-    HelloComponent,
-    ParentComponent, ChildComponent
+      AppComponent,
+      HelloComponent,
+      ParentComponent, ChildComponent,
+      ParentToChildInputComponent, ChildInputComponent,
+      ParentToChildInputsComponent, ChildInputsComponent,
+      ChildToParentComponent, ChildValueComponent
   ],
   bootstrap: [
-    AppComponent,
-    HelloComponent,
-    ParentComponent
+      ChildToParentComponent
+      // AppComponent,
+      // HelloComponent,
+      // ChildToParentComponent
   ]
 })
 

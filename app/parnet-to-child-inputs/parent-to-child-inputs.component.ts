@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
 
 
 @Component({
-    selector:'app-parent-to-child-inputs',
+    selector:'parent-to-child-inputs-app',
     template:
     `
         <div>부모 inputs

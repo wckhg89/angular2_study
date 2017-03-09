@@ -6,17 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Created by kanghonggu on 2017. 3. 9..
+ */
 var core_1 = require("@angular/core");
-var ParentComponent = (function () {
-    function ParentComponent() {
+var ChildInputsComponent = (function () {
+    function ChildInputsComponent() {
     }
-    return ParentComponent;
+    return ChildInputsComponent;
 }());
-ParentComponent = __decorate([
+ChildInputsComponent = __decorate([
     core_1.Component({
-        selector: 'parent-app',
-        template: "\n  <h1>\uB098\uB294 \uBD80\uBAA8\uC774\uB2E4 \uACE0\uB85C \uBD80\uBAA8\uC774\uB2E4.</h1>\n  <parent-input></parent-input>\n  <parent-to-child-inputs-app></parent-to-child-inputs-app>\n  <nested-child></nested-child>\n  "
+        selector: 'child-inputs',
+        template: "\n        <div>\uC790\uC2DDinputs<br>\n            inputs \uD504\uB85C\uD37C\uD2F0\uB85C \uBC1B\uC740 \uAC12 : {{name1}}, {{name2}}\n        </div>\n    ",
+        styles: ["div{border: 2px dotted #666;padding:10px;margin-top:5px;width:90%;height:75%;}"],
+        inputs: ['name1', 'name2']
     })
-], ParentComponent);
-exports.ParentComponent = ParentComponent;
-//# sourceMappingURL=parent.component.js.map
+], ChildInputsComponent);
+exports.ChildInputsComponent = ChildInputsComponent;
+//# sourceMappingURL=child-inputs.component.js.map
