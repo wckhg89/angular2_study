@@ -12,22 +12,25 @@ import {ParentToChildInputsComponent} from "./parnet-to-child-inputs/parent-to-c
 import {ChildInputsComponent} from "./parnet-to-child-inputs/child-inputs.component";
 import {ParentComponent} from "./nested/parent.component";
 import {ChildComponent} from "./nested/child.component";
+import {ChildToParentComponent} from "./child-to-parent/child-to-parent.component";
+import {ChildValueComponent} from "./child-to-parent/child.component";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [
+      BrowserModule, FormsModule,
+      AppRoutingModule
+  ],
   declarations: [
     AppComponent,
       HelloComponent,
       ParentComponent, ChildComponent,
       ParentToChildInputComponent, ChildInputComponent,
-      ParentToChildInputsComponent, ChildInputsComponent
+      ParentToChildInputsComponent, ChildInputsComponent,
+      ChildToParentComponent, ChildValueComponent
   ],
   bootstrap: [
-      AppComponent,
-      HelloComponent,
-      ParentComponent,
-      ParentToChildInputComponent,
-      ParentToChildInputsComponent
+      AppComponent
   ]
 })
 

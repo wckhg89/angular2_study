@@ -17,6 +17,9 @@ var parent_to_child_inputs_component_1 = require("./parnet-to-child-inputs/paren
 var child_inputs_component_1 = require("./parnet-to-child-inputs/child-inputs.component");
 var parent_component_1 = require("./nested/parent.component");
 var child_component_1 = require("./nested/child.component");
+var child_to_parent_component_1 = require("./child-to-parent/child-to-parent.component");
+var child_component_2 = require("./child-to-parent/child.component");
+var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,20 +27,20 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
+        imports: [
+            platform_browser_1.BrowserModule, forms_1.FormsModule,
+            app_routing_module_1.AppRoutingModule
+        ],
         declarations: [
             app_component_1.AppComponent,
             hello_component_1.HelloComponent,
             parent_component_1.ParentComponent, child_component_1.ChildComponent,
             parent_to_child_input_component_1.ParentToChildInputComponent, child_input_component_1.ChildInputComponent,
-            parent_to_child_inputs_component_1.ParentToChildInputsComponent, child_inputs_component_1.ChildInputsComponent
+            parent_to_child_inputs_component_1.ParentToChildInputsComponent, child_inputs_component_1.ChildInputsComponent,
+            child_to_parent_component_1.ChildToParentComponent, child_component_2.ChildValueComponent
         ],
         bootstrap: [
-            app_component_1.AppComponent,
-            hello_component_1.HelloComponent,
-            parent_component_1.ParentComponent,
-            parent_to_child_input_component_1.ParentToChildInputComponent,
-            parent_to_child_inputs_component_1.ParentToChildInputsComponent
+            app_component_1.AppComponent
         ]
     })
 ], AppModule);

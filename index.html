@@ -13,23 +13,16 @@
     <script src="https://unpkg.com/reflect-metadata@0.1.3"></script>
 
     <!-- 세번째. SystemJS 라이브러리 호출과 설정 -->
-	  <script src="https://unpkg.com/systemjs@0.19.27/dist/system.src.js"></script>
+    <script src="https://unpkg.com/systemjs@0.19.27/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
+
+    <base href="/">
   </head>
   <body>
     <!-- 네번째. application 표시 -->
     <my-app></my-app>
-
-    <app-hello>Loading...</app-hello>
-
-    <parent-app></parent-app>
-
-    <parent-input></parent-input>
-
-    <parent-to-child-inputs-app></parent-to-child-inputs-app>
-
   </body>
 </html>
