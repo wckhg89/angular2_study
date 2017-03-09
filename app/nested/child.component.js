@@ -6,6 +6,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Created by kanghonggu on 2017. 3. 9..
+ */
 var core_1 = require("@angular/core");
 var ChildComponent = (function () {
     function ChildComponent() {
@@ -15,7 +18,8 @@ var ChildComponent = (function () {
 ChildComponent = __decorate([
     core_1.Component({
         selector: 'nested-child',
-        template: "<h2>\uB098\uB294 \uC790\uC2DD\uC774\uB2E4 \uACE0\uB85C \uC790\uC2DD\uC774\uB2E4.</h2>"
+        template: "<div>\uC790\uC2DD\n    \n  </div>",
+        styles: ["div{border: 2px dotted #666;padding:10px;margin-top:5px;width:75%;height:75%;}"]
     })
 ], ChildComponent);
 exports.ChildComponent = ChildComponent;

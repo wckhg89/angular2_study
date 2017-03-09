@@ -15,7 +15,8 @@ var ParentComponent = (function () {
 ParentComponent = __decorate([
     core_1.Component({
         selector: 'parent-app',
-        template: "\n  <h1>\uB098\uB294 \uBD80\uBAA8\uC774\uB2E4 \uACE0\uB85C \uBD80\uBAA8\uC774\uB2E4.</h1>\n  <parent-input></parent-input>\n  <parent-to-child-inputs-app></parent-to-child-inputs-app>\n  <nested-child></nested-child>\n  "
+        template: "\n  <div>\uBD80\uBAA8\n    <nested-child></nested-child>\n  </div>",
+        styles: ['div{border: 2px solid #666;padding:10px;width:400px;height:200px;}']
     })
 ], ParentComponent);
 exports.ParentComponent = ParentComponent;

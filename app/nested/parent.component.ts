@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector : 'parent-app',
-  template: `
-  <h1>나는 부모이다 고로 부모이다.</h1>
-  <parent-input></parent-input>
-  <parent-to-child-inputs-app></parent-to-child-inputs-app>
-  <nested-child></nested-child>
-  `
+    selector: 'parent-app',
+    template: `
+  <div>부모
+    <nested-child></nested-child>
+  </div>`,
+    styles: ['div{border: 2px solid #666;padding:10px;width:400px;height:200px;}']
 })
-
-export class ParentComponent {}
+export class ParentComponent { }
