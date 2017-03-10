@@ -15,6 +15,7 @@ import {ChildComponent} from "./nested/child.component";
 import {ChildToParentComponent} from "./child-to-parent/child-to-parent.component";
 import {ChildValueComponent} from "./child-to-parent/child.component";
 import {AppRoutingModule} from "./app-routing.module";
+import {OopComponent} from "./oop-service/oop.component";
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import {AppRoutingModule} from "./app-routing.module";
       ParentComponent, ChildComponent,
       ParentToChildInputComponent, ChildInputComponent,
       ParentToChildInputsComponent, ChildInputsComponent,
-      ChildToParentComponent, ChildValueComponent
+      ChildToParentComponent, ChildValueComponent,
+      OopComponent
   ],
   bootstrap: [
       AppComponent

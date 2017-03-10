@@ -20,6 +20,7 @@ var child_component_1 = require("./nested/child.component");
 var child_to_parent_component_1 = require("./child-to-parent/child-to-parent.component");
 var child_component_2 = require("./child-to-parent/child.component");
 var app_routing_module_1 = require("./app-routing.module");
+var oop_component_1 = require("./oop-service/oop.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -37,7 +38,8 @@ AppModule = __decorate([
             parent_component_1.ParentComponent, child_component_1.ChildComponent,
             parent_to_child_input_component_1.ParentToChildInputComponent, child_input_component_1.ChildInputComponent,
             parent_to_child_inputs_component_1.ParentToChildInputsComponent, child_inputs_component_1.ChildInputsComponent,
-            child_to_parent_component_1.ChildToParentComponent, child_component_2.ChildValueComponent
+            child_to_parent_component_1.ChildToParentComponent, child_component_2.ChildValueComponent,
+            oop_component_1.OopComponent
         ],
         bootstrap: [
             app_component_1.AppComponent

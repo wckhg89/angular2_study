@@ -14,6 +14,7 @@ import { Component } from '@angular/core';
           <li><a routerLink="/parent/input" routerLinkActive="active">/parent/input 어플리케이션 루트모듈 라우팅 테스트</a></li>
           <li><a routerLink="/parent/inputs" routerLinkActive="active">/parent/inputs 어플리케이션 루트모듈 라우팅 테스트</a></li>
           <li><a routerLink="/child" routerLinkActive="active">/child 어플리케이션 루트모듈 라우팅 테스트</a></li>
+          <li><a routerLink="/oop/service" routerLinkActive="active">/oop-service 어플리케이션 루트모듈 라우팅 테스트</a></li>
         </ol>
     </div>     
   </div>

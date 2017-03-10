@@ -8,6 +8,7 @@ import {ParentComponent} from "./nested/parent.component";
 import {ParentToChildInputComponent} from "./parent-to-child/parent-to-child-input.component";
 import {ParentToChildInputsComponent} from "./parnet-to-child-inputs/parent-to-child-inputs.component";
 import {ChildToParentComponent} from "./child-to-parent/child-to-parent.component";
+import {OopComponent} from "./oop-service/oop.component";
 
 
 const appRoutes: Routes = [
@@ -15,7 +16,9 @@ const appRoutes: Routes = [
     {path : 'parent', component: ParentComponent },
     {path : 'parent/input', component:  ParentToChildInputComponent},
     {path : 'parent/inputs', component:  ParentToChildInputsComponent},
-    {path : 'child', component:  ChildToParentComponent}
+    {path : 'child', component:  ChildToParentComponent},
+    {path : 'oop/service', component:  OopComponent}
+
 ];
 
 @NgModule({

@@ -16,12 +16,14 @@ var parent_component_1 = require("./nested/parent.component");
 var parent_to_child_input_component_1 = require("./parent-to-child/parent-to-child-input.component");
 var parent_to_child_inputs_component_1 = require("./parnet-to-child-inputs/parent-to-child-inputs.component");
 var child_to_parent_component_1 = require("./child-to-parent/child-to-parent.component");
+var oop_component_1 = require("./oop-service/oop.component");
 var appRoutes = [
     { path: '', component: hello_component_1.HelloComponent },
     { path: 'parent', component: parent_component_1.ParentComponent },
     { path: 'parent/input', component: parent_to_child_input_component_1.ParentToChildInputComponent },
     { path: 'parent/inputs', component: parent_to_child_inputs_component_1.ParentToChildInputsComponent },
-    { path: 'child', component: child_to_parent_component_1.ChildToParentComponent }
+    { path: 'child', component: child_to_parent_component_1.ChildToParentComponent },
+    { path: 'oop/service', component: oop_component_1.OopComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
