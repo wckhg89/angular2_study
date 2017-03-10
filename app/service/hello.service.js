@@ -10,23 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var hello_service_1 = require("../service/hello.service");
-var HelloComponent = (function () {
-    function HelloComponent(helloService) {
-        this.helloService = helloService;
-        this.title = 'Hello Component';
-        this.welcome = helloService.sayHello();
+var HelloService = (function () {
+    function HelloService() {
     }
-    return HelloComponent;
+    HelloService.prototype.sayHello = function () {
+        return "Hello Service !";
+    };
+    return HelloService;
 }());
-HelloComponent = __decorate([
-    core_1.Component({
-        selector: 'app-hello',
-        template: "\n    <h1>{{title}}</h1>\n    <h2>{{welcome}}</h2>\n    <input type=\"text\" [(ngModel)]=\"title\">\n    <textarea [(ngModel)]=\"title\"></textarea>",
-        styles: ["input,textarea{margin-top:20px;display:block;}"],
-        providers: [hello_service_1.HelloService]
-    }),
-    __metadata("design:paramtypes", [hello_service_1.HelloService])
-], HelloComponent);
-exports.HelloComponent = HelloComponent;
-//# sourceMappingURL=hello.component.js.map
+HelloService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], HelloService);
+exports.HelloService = HelloService;
+//# sourceMappingURL=hello.service.js.map
